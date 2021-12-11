@@ -1,0 +1,5 @@
+# Training of GROBID
+java -Xmx4G -jar grobid-trainer/build/libs/grobid-trainer-0.6.1-onejar.jar 0 citation -gH grobid-home
+
+# Evaluation of GROBID
+java -Xmx4G -jar grobid-trainer/build/libs/grobid-trainer-0.6.1-onejar.jar 1 citation -gH grobid-home
