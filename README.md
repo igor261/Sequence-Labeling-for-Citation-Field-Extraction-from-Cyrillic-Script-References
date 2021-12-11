@@ -1,82 +1,6 @@
 # Sequence Labeling for Reference Parsing of Cyrillic Script Scholarly Data
 
-Structure of contents (data) and their descriptions.
-
-## BERT
-
-### train_random_samples
-Training data for BERT models with differing training data.
-
-### BERT_final_model
-* Final BERT model  [model_2.pth, tag_values_2] trained with 2,000 instances
-* Evaluation of the model on annotated data per [eval_english, eval_other, eval_ukrainian, eval_russian]
-* Evaluation of the model on synthetic hold-out dataset and real annotated [eval_final_2.txt] and confusion matrix of the results on real annotated data [confusionsmatrix.txt]
-
-### BERT_results_real_set
-Results of all BERT models (Five iterations per training data size) evaluated on the real annotated data
-
-### Evaluation_final
-Results of BERT models trained with differing training dataset sizes, evaluated on the real annotated data and the synthetic hold-out dataset. Additionally, files with duration of model training per dataset size.
-
-### models
-One-time trained models on differing dataset sizes. Used for evaluations in „Evaluation_final“.
-
-## FastText
-FastText embeddings. Used to determine the languages of the manually annotated references.
-
-## Grobid
-### Grobid_training_data
-Synthetically created labelled reference strings in GROBID´s TEI format.
-
-### Grobid_test_data
-Manually created labelled reference strings in GROBID´s TEI format.
-
-### Grobid_results
-Evaluation of GROBID models (differing training dataset sizes).
-
-## Real_annotated_data
-### CORE_pdfs
-PDFs that have been manually annotated and which resulted in the „real“ labeled reference string dataset.
-### Manual_anno_xml1.1
-Annotated data exported from Inception in XML1.1 format. 
-### TEI
-Annotated data transformed into TEI files (TEI files have the same structure, as the TEI output files of GROBID)
-### Labelled_text_per_paper
-Labelled reference strings per annotated paper. 
-### Labelled_text_per_language
-Labelled reference strings per language
-
-## Synthetic_data 
-
-### Big_BibTeX
-BibTeX file that contain all paper metadata gathered from WoS. Exported from EndNote.
-
-### BST files
-Citation style files.
-
-### EndNote_final_library
-EndNote library with all paper metadata from WoS.
-
-### Labeled_text_data
-All labelled synthetic reference strings
-
-### Pdf_bibtex_data
-All PDFs and BibTeX files per reference and citation style (automatically generated with python).
-
-### Synthetic_data_statistics
-Synthetic dataset statistics.
-
-### Test_set_synth
-Hold-out-set of 2,000 labeled synthetic reference strings
-
-### Train_set_synth
-Labelled synthetic reference strings without the hold-out set.
-
-### WoS_Data
-Raw data from WoS and in Excel format.
-
-# CODE
-Structure of contents (code) and their descriptions. Paths refer to the data folder structure.
+Structure of contents (code) and their descriptions. Paths refer to the data (https://figshare.com/s/50f02a32af7447b2fdbc) folder structure.
 
 ## Synthetic-Data-Set
 ### WOS2Excel
@@ -218,3 +142,79 @@ Final BERT model trained on 2,000 references
 * Output: Evaluation results; eval_englisch.txt, eval_other.txt,  eval_russian.txt, eval_ukrainian.txt (".\Sequence-Labeling-for-Reference-Parsing-of-Cyrillic-Script-Scholarly-Data\BERT\BERT_final_model”)
 
 **bert_test_final_confusion_matrix.py**: The final BERT model is evaluated on real data and the confusion matrix is calculated. Results are stored here: (".\Sequence-Labeling-for-Reference-Parsing-of-Cyrillic-Script-Scholarly-Data\BERT\BERT_final_model\confusionmatrix.txt”)
+
+# Data
+Structure of contents (data) and their descriptions.
+
+## BERT
+
+### train_random_samples
+Training data for BERT models with differing training data.
+
+### BERT_final_model
+* Final BERT model  [model_2.pth, tag_values_2] trained with 2,000 instances
+* Evaluation of the model on annotated data per [eval_english, eval_other, eval_ukrainian, eval_russian]
+* Evaluation of the model on synthetic hold-out dataset and real annotated [eval_final_2.txt] and confusion matrix of the results on real annotated data [confusionsmatrix.txt]
+
+### BERT_results_real_set
+Results of all BERT models (Five iterations per training data size) evaluated on the real annotated data
+
+### Evaluation_final
+Results of BERT models trained with differing training dataset sizes, evaluated on the real annotated data and the synthetic hold-out dataset. Additionally, files with duration of model training per dataset size.
+
+### models
+One-time trained models on differing dataset sizes. Used for evaluations in „Evaluation_final“.
+
+## FastText
+FastText embeddings. Used to determine the languages of the manually annotated references.
+
+## Grobid
+### Grobid_training_data
+Synthetically created labelled reference strings in GROBID´s TEI format.
+
+### Grobid_test_data
+Manually created labelled reference strings in GROBID´s TEI format.
+
+### Grobid_results
+Evaluation of GROBID models (differing training dataset sizes).
+
+## Real_annotated_data
+### CORE_pdfs
+PDFs that have been manually annotated and which resulted in the „real“ labeled reference string dataset.
+### Manual_anno_xml1.1
+Annotated data exported from Inception in XML1.1 format. 
+### TEI
+Annotated data transformed into TEI files (TEI files have the same structure, as the TEI output files of GROBID)
+### Labelled_text_per_paper
+Labelled reference strings per annotated paper. 
+### Labelled_text_per_language
+Labelled reference strings per language
+
+## Synthetic_data 
+
+### Big_BibTeX
+BibTeX file that contain all paper metadata gathered from WoS. Exported from EndNote.
+
+### BST files
+Citation style files.
+
+### EndNote_final_library
+EndNote library with all paper metadata from WoS.
+
+### Labeled_text_data
+All labelled synthetic reference strings
+
+### Pdf_bibtex_data
+All PDFs and BibTeX files per reference and citation style (automatically generated with python).
+
+### Synthetic_data_statistics
+Synthetic dataset statistics.
+
+### Test_set_synth
+Hold-out-set of 2,000 labeled synthetic reference strings
+
+### Train_set_synth
+Labelled synthetic reference strings without the hold-out set.
+
+### WoS_Data
+Raw data from WoS and in Excel format.
