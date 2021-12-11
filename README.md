@@ -1,6 +1,12 @@
 # Sequence Labeling for Reference Parsing of Cyrillic Script Scholarly Data
 
-Structure of contents (code) and their descriptions. Paths refer to the data (https://figshare.com/s/50f02a32af7447b2fdbc) folder structure.
+## Task
+- Generate a large data set of labeled Cyrillic reference strings, consisting of over 100,000 synthetically generated references as well as over 700 references manually labeled references gathered from multidisciplinary Cyrillic script publications
+- Fine-tune a multilingual BERT model on different data set sizes and determine the amount of training data needed to train high-performance deep learning models (BERT in our case) for Citation Field Extraction (CFE) and assess the benefits of training on synthetically generated references. We achieve a F1-Score of 0.933 with our best BERT model
+
+## Content 
+Below the structure of contents (code) and their descriptions are summarized. The paths refer to the data folder structure. The data used for training and evaluation (>100,000 synthetically generated & manually labeled references) can be found here: https://figshare.com/s/50f02a32af7447b2fdbc.
+Under the header "Data" additional information to the contents and folder structure of our data is provided.
 
 ## Synthetic-Data-Set
 ### WOS2Excel
