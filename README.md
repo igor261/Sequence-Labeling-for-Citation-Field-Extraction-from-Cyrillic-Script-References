@@ -8,6 +8,8 @@
 Below the structure of contents (code) and their descriptions are summarized. The paths refer to the data folder structure. The data used for training and evaluation (>100,000 synthetically generated & manually labeled references) can be found here: https://figshare.com/s/50f02a32af7447b2fdbc.
 Under the header "Data" additional information to the contents and folder structure of our data is provided.
 
+# Code
+
 ## Synthetic-Data-Set
 ### WOS2Excel
 
